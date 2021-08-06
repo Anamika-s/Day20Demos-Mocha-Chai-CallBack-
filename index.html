@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      console.log("Start");
+     function getName(name , callback)
+     {
+      setTimeout(()=>
+      {
+        console.log("In Between"); return callback(name);
+      
+      },1000);
+    }
+     getName('Deepak' , (name)=>
+     {
+       console.log(name);
+       console.log("Name reced");
+     });
+     //console.log(name);
+     console.log("End");
+     console.log("Last");
+     
+     </script>
+      
+  </head>
+
+</html>
